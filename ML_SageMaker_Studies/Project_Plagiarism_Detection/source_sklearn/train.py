@@ -11,6 +11,7 @@ import joblib
 
 ## TODO: Import any additional libraries you need to define a model
 from sklearn.svm import LinearSVC
+from sklearn.naive_bayes import GaussianNB
 #from sklearn.svm import SVC
 
 # Provided model load function
@@ -63,11 +64,11 @@ if __name__ == '__main__':
     
 
     ## TODO: Define a model 
-    model = LinearSVC
+    #model = LinearSVC()
+    model = GaussianNB()
     #model = svm.SVC(C=arg.regularizer, kernel=args.kernel)    
     
 
-    
     ## TODO: Train the model
     model.fit(train_x, train_y)
 
